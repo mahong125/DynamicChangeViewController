@@ -1,0 +1,2 @@
+# DynamicChangeViewController
+基于tabBar架构的界面，动态替换单个NavigationController
