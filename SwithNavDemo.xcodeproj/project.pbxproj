@@ -17,6 +17,7 @@
 		CB1A88591E66C16A00BF4631 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1A88581E66C16A00BF4631 /* OneViewController.m */; };
 		CB1A885C1E66C17400BF4631 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1A885B1E66C17400BF4631 /* TwoViewController.m */; };
 		CB1A885F1E66C18400BF4631 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1A885E1E66C18400BF4631 /* ThreeViewController.m */; };
+		CB8337591E696F03000C5403 /* SpotlightHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8337581E696F03000C5403 /* SpotlightHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		CB1A885B1E66C17400BF4631 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		CB1A885D1E66C18400BF4631 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		CB1A885E1E66C18400BF4631 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		CB8337571E696F03000C5403 /* SpotlightHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotlightHandler.h; sourceTree = "<group>"; };
+		CB8337581E696F03000C5403 /* SpotlightHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotlightHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			children = (
 				CB1A88351E66C13000BF4631 /* AppDelegate.h */,
 				CB1A88361E66C13000BF4631 /* AppDelegate.m */,
+				CB8337571E696F03000C5403 /* SpotlightHandler.h */,
+				CB8337581E696F03000C5403 /* SpotlightHandler.m */,
 				CB1A88381E66C13000BF4631 /* ViewController.h */,
 				CB1A88391E66C13000BF4631 /* ViewController.m */,
 				CB1A88571E66C16A00BF4631 /* OneViewController.h */,
@@ -230,6 +235,7 @@
 				CB1A88371E66C13000BF4631 /* AppDelegate.m in Sources */,
 				CB1A88341E66C13000BF4631 /* main.m in Sources */,
 				CB1A885F1E66C18400BF4631 /* ThreeViewController.m in Sources */,
+				CB8337591E696F03000C5403 /* SpotlightHandler.m in Sources */,
 				CB1A885C1E66C17400BF4631 /* TwoViewController.m in Sources */,
 				CB1A88591E66C16A00BF4631 /* OneViewController.m in Sources */,
 			);
@@ -290,6 +296,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -333,6 +340,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -357,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwithNavDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -369,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwithNavDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,6 +430,7 @@
 				CB1A88531E66C13000BF4631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB1A88541E66C13000BF4631 /* Build configuration list for PBXNativeTarget "SwithNavDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +439,7 @@
 				CB1A88561E66C13000BF4631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

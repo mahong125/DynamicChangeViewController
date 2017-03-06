@@ -11,6 +11,8 @@
 #import "OneViewController.h"
 #import "ThreeViewController.h"
 #import "TwoViewController.h"
+#import "SpotlightHandler.h"
+#import <CoreSpotlight/CoreSpotlight.h>
 
 @interface AppDelegate ()
 
@@ -37,6 +39,8 @@
     [self.mainTabBar setViewControllers:@[nav1,nav2,nav3]];
     self.window.rootViewController = self.mainTabBar;
     
+    [SpotlightHandler setSpotlight];
+    
     return YES;
 }
 
@@ -51,6 +55,24 @@
     [controllers replaceObjectAtIndex:index withObject:replaceNav];
     NSArray *newControllers = [controllers copy];
     [self.mainTabBar setViewControllers:newControllers animated:NO];
+    
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
+{
+    if ([userActivity.activityType isEqualToString:CSSearchableItemActionType]) {
+        /** 获取searchItem 中的唯一 id */
+        NSString *uniqueIdentifier = [userActivity.userInfo objectForKey:CSSearchableItemActivityIdentifier];
+        NSLog(@"您点击了 == %@",uniqueIdentifier);
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:uniqueIdentifier]];
+    }
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"url == %@",url.absoluteString);
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
